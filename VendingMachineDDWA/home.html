@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+        <link href="css/bootstrap.css" rel="stylesheet">
+        <script src="js/jquery-2.2.4.min.js"></script>
+        <script src="js/bootstrap.js"></script>
+        <script src="js/home.js"></script>
+
+    <head>
+        <title>Vending Machine</title>
+    </head>
+    <body>        
+        <div class"container">
+            <ul class="list-group" id="errorMessages"></ul>
+            <h1 id="header">Vending Machine</h1>
+            <hr/>
+            <div class="row" id="row1">
+                <div class="col-md-8" align="center">
+                    <button class="col-md-offset-3 itemButtons" type="button" id="itemOneButton" value="1">
+                        <table>
+                            <tr>
+                                <th id="button1Id"></th>
+                            </tr>
+                            <tr>
+                                <td id="button1name"></td>
+                            </tr>
+                            <tr>
+                                <td id="button1price"></td>
+                            </tr>
+                            <tr>
+                                <td id="button1quantity"></td>
+                            </tr>
+                        </table>
+
+                    </button>
+                    <button class="col-md-offset-1 itemButtons" type="button" id="itemTwoButton" value="2">
+                        <table>
+                            <tr>
+                                <th id="button2Id"></th>
+                            </tr>
+                            <tr>
+                                <td id="button2name"></td>
+                            </tr>
+                            <tr>
+                                <td id="button2price"></td>
+                            </tr>
+                            <tr>
+                                <td id="button2quantity"></td>
+                            </tr>
+                        </table>
+                    </button>
+                    <button class="col-md-offset-1 itemButtons" type="button" id="itemThreeButton" value="3">
+                        <table>
+                            <tr>
+                                <th id="button3Id"></th>
+                            </tr>
+                            <tr>
+                                <td id="button3name"></td>
+                            </tr>
+                            <tr>
+                                <td id="button3price"></td>
+                            </tr>
+                            <tr>
+                                <td id="button3quantity"></td>
+                            </tr>
+                        </table>
+                    </button>
+                </div>
+                <div id="addMoney" class="col-md-4">
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                                <h3>Total $ In</h3>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12" align="center">
+                                <input class="text-center" type="text" id="totalDollarsInBox" name="totalDollarsIn" placeholder="0.00" align="center" readonly>
+                        </div>
+                    </div>
+                    <br/>
+                    <div class="row">
+                        <div class="col-md-6" align="center">
+                                <button id="addDollar" type="button">Add Dollar</button>
+                        </div>
+                        <div class="col-md-6" align="center">
+                                <button id="addQuarter" type="button">Add Quarter</button>
+                        </div>
+                    </div>
+                    <br/>
+                    <div class="row">
+                            <div class="col-md-6" align="center">
+                                    <button id="addDime" type="button">Add Dime</button>
+                            </div>
+                            <div class="col-md-6" align="center">
+                                    <button id="addNickel" type="button">Add Nickel</button>
+                            </div>
+                    </div>
+                    <hr/> 
+                </div>
+            </div>
+            <div class="row" id="row2">
+                <div class="col-md-8" align="center">
+                    <button class="col-md-offset-3 itemButtons" type="button" id="itemFourButton" value="4">
+                        <table>
+                            <tr>
+                                <th id="button4Id"></th>
+                            </tr>
+                            <tr>
+                                <td id="button4name"></td>
+                            </tr>
+                            <tr>
+                                <td id="button4price"></td>
+                            </tr>
+                            <tr>
+                                <td id="button4quantity"></td>
+                            </tr>
+                        </table>
+                    </button>
+                    <button class="col-md-offset-1 itemButtons" type="button" id="itemFiveButton" value="5">
+                    <table>
+                        <tr>
+                            <th id="button5Id"></th>
+                        </tr>
+                        <tr>
+                            <td id="button5name"></td>
+                        </tr>
+                        <tr>
+                            <td id="button5price"></td>
+                        </tr>
+                        <tr>
+                            <td id="button5quantity"></td>
+                        </tr>
+                    </table>
+                    </button>
+                    <button class="col-md-offset-1 itemButtons" type="button" id="itemSixButton" value="6">
+                        <table>
+                            <tr>
+                                <th id="button6Id"></th>
+                            </tr>
+                            <tr>
+                                <td id="button6name"></td>
+                            </tr>
+                            <tr>
+                                <td id="button6price"></td>
+                            </tr>
+                            <tr>
+                                <td id="button6quantity"></td>
+                            </tr>
+                        </table>
+                    </button>
+                </div>
+                <div id="messages" class="col-md-4">
+                        <div class="row">
+                            <div class="col-md-12 text-center">
+                                    <h3>Messages</h3>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12"  align="center">
+                                    <input class="text-center" style="width: 250px;" type="text" id="messageBox" name="messages" placeholder="Messages" align="center" readonly>
+                            </div>
+                        </div>
+                        <br/>
+                        <div class="row">
+                            <div class="col-md-12" align="center">
+                                <label for="itemSelectedBox">
+                                    Item:
+                                </label>
+                                    <input type="text" style="width: 50px;" name="itemSelectedBox" id="itemSelectedBox" placeholder="Item #" align="center" readonly>
+                            </div>
+                        </div>
+                        <br/>
+                        <div class="row">
+                                <div class="col-md-12" align="center">
+                                        <button id="makePurchase" type="button">Make Purchase</button>
+                                </div>
+                        </div>
+                        <hr/> 
+                    </div>
+            </div>
+            <div class="row" id="row3">
+                <div class="col-md-8" align="center">
+                    <button class="col-md-offset-3 itemButtons" type="button" id="itemSevenButton" value="7">
+                        <table>
+                            <tr>
+                                <th id="button7Id"></th>
+                            </tr>
+                            <tr>
+                                <td id="button7name"></td>
+                            </tr>
+                            <tr>
+                                <td id="button7price"></td>
+                            </tr>
+                            <tr>
+                                <td id="button7quantity"></td>
+                            </tr>
+                        </table>
+                    </button>
+                    <button class="col-md-offset-1 itemButtons" type="button" id="itemEightButton" value="8">
+                        <table>
+                            <tr>
+                                <th id="button8Id"></th>
+                            </tr>
+                            <tr>
+                                <td id="button8name"></td>
+                            </tr>
+                            <tr>
+                                <td id="button8price"></td>
+                            </tr>
+                            <tr>
+                                <td id="button8quantity"></td>
+                            </tr>
+                        </table>
+                    </button>
+                    <button class="col-md-offset-1 itemButtons" type="button" id="itemNineButton" value="9">
+                        <table>
+                            <tr>
+                                <th id="button9Id"></th>
+                            </tr>
+                            <tr>
+                                <td id="button9name"></td>
+                            </tr>
+                            <tr>
+                                <td id="button9price"></td>
+                            </tr>
+                            <tr>
+                                <td id="button9quantity"></td>
+                            </tr>
+                        </table>
+                    </button>
+                </div>
+                <div id="changeReturn" class="col-md-4">
+                        <div class="row">
+                            <div class="col-md-12 text-center">
+                                    <h3>Change</h3>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12" align="center">
+                                    <input class="text-center" style="width: 300px;" id="changeBox" type="text" name="change" placeholder="$0.00" align="center" readonly>
+                            </div>
+                        </div>
+                        <br/>
+                        <div class="row">
+                                <div class="col-md-12" align="center">
+                                        <button id="changeReturnButton" type="button">Change Return</button>
+                                </div>
+                                <div class="col-md-12" align="center">
+                                        <button id="resetButton" type="button" style="display:none" >Press To Make Another Purchase</button>
+                                </div>
+                        </div>
+                        <hr/> 
+                    </div>
+        </div>    
+    </body>
+</html>
