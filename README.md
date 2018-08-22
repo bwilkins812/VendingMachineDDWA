@@ -17,5 +17,12 @@ Getting change after purchase
 ![vending machine ddwa return change](https://user-images.githubusercontent.com/30512121/44439310-0b1b9c80-a591-11e8-8972-01847f5feb6d.png)
 ____________________________________________________________________________________________________________________
 
+Returning change without a purchase
+![vending machine ddwa return change no purchase](https://user-images.githubusercontent.com/30512121/44439598-4d91a900-a592-11e8-86d4-6ded3149095e.png)
+
+____________________________________________________________________________________________________________________
+
 Out of Stock
 ![vending machine ddwa oos](https://user-images.githubusercontent.com/30512121/44439315-0d7df680-a591-11e8-96a7-ea9a3892755d.png)
+
+
