@@ -1,7 +1,7 @@
 # VendingMachineDDWA
 My SG Milestone 6 Summative:  Vending Machine (DDWA)
 
-In this project I demonstrated my proficiency in using JavaScript and jQuery to create a browser-based user interface for an existing web service.  The user can enter money by pressing the appropriate buttons, select an item, and get correct change.  The application also allows the user to get their change returned without a purchase and it decrements inventory on-hands appropriately and displays the message "Out of Stock" if the user tries to purchase an item with zero on-hand.
+In this project I demonstrated my proficiency in using JavaScript and jQuery to create a browser-based user interface for an existing web service.  The user can enter money by pressing the appropriate buttons, select an item, and get correct change.  The application also allows the user to get their change returned without a purchase and it decrements inventory on-hands appropriately and displays the message "SOLD OUT!!!" if the user tries to purchase an item with zero on-hand.
 
 ____________________________________________________________________________________________________________________
 
